@@ -1,0 +1,30 @@
+{
+  "name": "saucedemo-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript test automation framework for the SauceDemo application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:api": "playwright test --project=api --grep @api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arindam0111/saucedemo-playwright-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arindam0111/saucedemo-playwright-automation/issues"
+  },
+  "homepage": "https://github.com/arindam0111/saucedemo-playwright-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "dotenv": "^18.0.3",
+    "typescript": "^7.0.2"
+  }
+}
