@@ -194,12 +194,22 @@ The goal is to maintain a clean separation between test scenarios and automation
 
 ### Test Execution
 
-The current test suite contains **18 automated test executions**:
+The current automation suite contains **18 test executions**:
 
-* **12 UI executions** across Chromium, Firefox, and WebKit
-* **6 API tests** using Playwright APIRequestContext
-* **18/18 tests passing** in local execution
-* **18/18 tests passing** in GitHub Actions CI
+| Test Area |   Test Scenarios | Browser / Execution       |
+| --------- | ---------------: | ------------------------- |
+| Login     |                3 | Chromium, Firefox, WebKit |
+| Purchase  |                1 | Chromium, Firefox, WebKit |
+| API       |                6 | Playwright API            |
+| **Total** | **10 scenarios** | **18 executions**         |
+
+**Execution Results**
+
+* ✅ 18/18 passing in local execution
+* ✅ 18/18 passing in GitHub Actions CI
+* ✅ UI tests executed across Chromium, Firefox, and WebKit
+* ✅ API tests executed using Playwright `APIRequestContext`
+
 
 ## 🚀 Running the Tests
 
